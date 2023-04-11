@@ -1,0 +1,89 @@
+header{
+    background: #BBBBBB;
+    padding: 20px;/*espaciamiento externo*/
+}
+
+.caja{
+    width: 940px;/*tamaño de ancho*/
+    position: relative;/*vuenve relativa la posicion*/
+    margin: 0 auto;/*calula resolucion de la pantalla para centralizar*/
+}
+
+nav{
+    position: absolute;/*permite mover posicionar un elemento*/
+    top: 110px;/*separacion de arriba*/
+    right: 0;/*separacion de derecha*/
+}
+
+nav li{/*selector anidado*/
+display: inline;/*Se pone en una linea, toma el tamaño del elemento, no permite cambiar tamaño como inline-block*/
+margin: 0 0 0 15px;/*espaciamiento interno*/
+}
+
+nav a{
+    text-transform: uppercase;/*pone en mayuscula*/
+    color: #000000;/*pone en color negro*/
+    font-weight: bold;/*pone negrita*/
+    font-size: 22px;/*tamaño de letra*/
+    text-decoration: none;/*quita el subrallado*/
+}
+
+nav a:hover{/*captura el movimiento del mause sobre elemento*/
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.productos{/*selector*/
+    width: 940px;
+    margin: 0 auto;/*superior e inferior 0, laterales automatico*/
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;/*30 % en los elementos y los otros 10 en espacios entre ellos*/
+    vertical-align: top;
+    margin: 0 1.5%;/*espacio externo*/
+    padding:30px 20px;
+    box-sizing: border-box;/* los 20px no sobrepasan el 30%, estan contabilizados en el 30%*/
+    border : 2px solid #000000;
+    border-radius: 10px;/*si se pone un valor es para los 4 ezquinas*/
+}
+
+.productos li:hover{
+    border-color:#c78c19;
+}
+
+.productos li:active{
+    border-color: #088c19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;/*negrita*/
+}
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.producto-descripcion{
+    font: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight:bold;
+    margin-top:10px;
+}
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyraight{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
